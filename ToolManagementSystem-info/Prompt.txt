@@ -1,0 +1,59 @@
+Tool Management System
+This project involves the development of a hierarchical system to manage facilities(with many workplaces), workplaces (with many workstations), workstation(with each worker assigned 1 workstation only). The system is designed to streamline tool usage, request approvals, and user responsibilities across various levels of an organization.
+The system supports the following roles:
+Owner
+Facility Manager
+Workplace Manager
+Tool Crib Manager
+Worker
+
+1. Roles & Responsibilities
+i) Owner
+- Adds and manages facilities
+-Add facility manager to each location
+-Gets reports: i) Each Location Report
+                         ii) Each Workspace Report
+                         iii) All Workspace Managers details
+                         iv) Facility Manager Details
+ii) Facility Manager
+Add and manage workspaces
+Add Workplace manager to each workplace
+Gets and approves request for extra tools from workspace manager
+iii) Workplace Manager
+Sees Worker’s Tool history (When did worker take tool, returned or not, etc.)
+- Approve / Reject Special Tools request
+- Add and allot Tool Crib Manager of that particular workplace (there can be multiple tool crib managers for each tool crib)
+-Add Worker and Their work station
+- Sending request of extra tools to Facility Manager (gets request from Tool Crib Mnager)
+-sees Crib Inventory, Workers, Workstations
+Note: Only that worker can request tools who are part of that particular workplace)
+
+iv) Tool Crib Manager
+- Reject /Approve normal tools request (because special tools request are assigned to workplace manager)
+- Return of tools (Special and normal)
+- Tool History/ Status (total, allocated to which worker, allocated number, etc.)
+-Tools Inventory (View Only)
+Request extra tools from workplace manager)
+
+v) Worker
+- See Available Tools
+-request tools from Tool Crib Manager
+- request status
+
+2) Types Of Tools:
+i) Perishable
+Must be returned
+One-time use, monitored for damage/loss
+ii)Non-Perishable
+Optional return
+Long-term use, monitored for condition
+
+3) Status Of Tools: 
+Approval Logic: 
+Normal Tool - Tool Crib Manager            
+Special Tool - Tool Crib Manager AND Workplace Manager
+            
+ 
+
+
+

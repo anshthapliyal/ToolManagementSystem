@@ -1,0 +1,6 @@
+Summary of the tool handling logic:
+Tool Category	Is Perishable?	Handler	                 Return Date	         Return Status
+NORMAL	            false	ToolCribManager	             Set	           PENDING
+NORMAL	            true	ToolCribManager	             null	         UNRETURNABLE
+SPECIAL	             false	WorkplaceManager	      Set	           Pending
+SPECIAL              true       WORKPLACEMANAGER              null                 UNRETURNABLE
